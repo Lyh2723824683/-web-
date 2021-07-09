@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册</title>
+</head>
+<body>
+    <h3>必填</h3>
+    <form action = "xxx.php" method ="GET" name="注册列表">
+        <input type="reset" value="重新设置"> <br />
+
+        <label for="UsName">用户名：</label> <br />
+        <input type="text" name="UsName" value=""  minlength="6"  maxlength="32" id="UsName"> 
+        用户名为6到32位，有数字、字母、下划线组成 <br />
+
+        <label for="password">密码：</label>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+        <label for="password1">确认密码：</label>                   <br />
+        <input type="password" name="password" value=""  minlength="6"  maxlength="32" id="password">
+        <input type="password" name="password1" value=""  minlength="6"  maxlength="32" id="password1">    
+        <br />
+        *6-32字母+数字组合 <br />
+
+        <br />
+        <br />
+        必填 我们会通过以下方式为你提供更优质的服务 <br />
+
+        <br />
+        <br />
+        <br />
+        
+
+        <label for="exu">邮 箱</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label for="tel">联系电话</label> <br />
+        <input type="text" name="exu" value=""  minlength="12"  maxlength="32" id="exu">  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" name="tel" oninput="value=value.replace(/[^\d]/g,'')" minlength="11" maxlength="11">   <br />
+        *用于找回密码，请正确填写 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        *用于重要操作身份验证，请正确填写  <br />
+        <br />
+        <br />
+        性别：<label for="nan">男</label>    <input type="radio" name="sex" value="男" checked = "checked" id ="nan"> 
+        <label for="nv">女</label>      <input type="radio"name="sex" value="女" id="nv"> <br />
+        <br />
+        <br />
+
+        <label for="ML">店 名</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label for="NL">所属行业</label> <br />
+        <input type="text" name="ML" value=""  minlength="5"  maxlength="16" id="ML">&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        <select id="NL">
+            <option selected ="selected">  零售行业 </option>
+            <option>  软件行业 </option>
+            <option>  设计行业 </option>
+            <option>  制造行业 </option>
+            <option>  服务行业 </option>
+        </select> <br />
+        <br />
+        <br />
+
+         
+        <label for="JJ">上传身份证（或其他）</label><input type="file" id = "JJ"> 
+        
+        <br />
+        <br />
+
+        <label for="DZ" form="SF">联系地址</label><br />
+        <select id="DZ">
+            <option selected ="selected">  请选择省份 </option>
+            <option>  xxx </option>
+            <option>  xxx </option>
+            <option>  xxx </option>
+            <option>  xxx </option>
+        </select>省
+
+        <select id="SF">
+            <option selected ="selected">  请选择城市 </option>
+            <option>  xxx </option>
+            <option>  xxx </option>
+            <option>  xxx</option>
+            <option>  xxx </option>
+        </select>市
+
+        <input type="text "  name="DZ" value=""    maxlength="32" >
+
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <input type="submit" value="立即注册"> <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+
+        反馈：<br />
+         <textarea cols="50" rows="5" name="jibaoren">
+
+         </textarea>
+
+
+
+        
+
+    </form> 
+    
+</body>
+</html>

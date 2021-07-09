@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>序列</title>
+</head>
+<body>
+     <h2> 无序列表 </h2>
+      <h4>  你喜欢的游戏？</h4>
+      <u1>
+          <!-- ul里面只能存在li标签
+               li可以存放任何标签-->
+        <li> apex   </li>
+        <li> lol   </li>
+        <li> warframe  </li>
+        <li> 怪物猎人 世界   </li>
+      </u1>
+
+     <h2> 有序列表 </h2>
+     <h4>游戏小时排行榜</h4>
+     <ol>
+          <!-- ol里面只能存在li标签
+               li可以存放任何标签-->
+         <li> 350  </li>
+         <li>  1000+ </li>
+         <li> 150  </li>
+         <li>  180 </li>
+     </ol>
+
+     <h2> 自定义列表 </h2>
+     <h4>段位排行榜</h4>
+     <!-- 语法
+        <d1>
+            <dt>名词</dt>
+            <dd>名词相关的解释</dd> 
+            <dd>名词相关的解释</dd>
+            <dd>名词相关的解释</dd>
+            <dd>名词相关的解释</dd>
+        </dl>
+     -->
+     <dl>
+          <!-- dl里面只能存在dt和dd标签
+               dt可以拥有多个dd
+               dt和dd可以存放任何标签-->
+
+        <dt>段位排行</dt>
+        <dd>铂金</dd> 
+        <dd>黄金</dd>
+        <dd>入门</dd>
+        <dd>菜鸟</dd>
+
+     </dl>
+
+
+     <h4>表单标签</h4>
+     <!-- 注册页面 
+          3部分人组成
+           表单域
+           表单控件
+           提示信息-->
+           <!-- 语法
+           <form action = "url地址" method ="提交方式"(get/post)   name = "表单名称">
+           </form> -->
+           <form action = "url地址" method ="GET"   name = "名称">
+           </form>
+            <!-- input输入表单元素
+                <input  type ="属性值" />
+
+               select下拉表单元素
+                textarea文本域元素  -->
+            <form action = "xxx.php" method ="GET" name="表单">
+
+                <label for="txet">用户名：</label>  <input type="text"  name="username" value="请输入用户名"  minlength="6" maxlength="11" id="txet">  <br />
+                <!-- 输入文本
+                value 可以提示，后台也可以采取到用户数据
+                maxlength 最多输入多少个字符
+                minlength 最少输入多少个字符
+                lable   for = "id名字"    后面也要加id名字要相同  可以扩大选择区域 -->
+
+                密 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码:<input type="password" name="powrdword" > <br />
+                <!--password  密码看不见的 -->
+
+                性别：<label for="nan">男</label>    <input type="radio" name="sex" value="男" checked = "checked" id ="nan"> 
+                     <label for="nv">女</label>      <input type="radio"name="sex" value="女" id="nv"> <br />
+                <!-- 单选按钮  radio
+                    name 是表单元素名字  这里性别单选 必须有相同的名字
+                    单（多）都可以设置checked属性 ，当页面打开时候就可以默认选择这个按钮 -->
+
+                爱好:打游戏<input type="checkbox" name="hobby" value="游戏"checked = "checked"> 
+                     玩手机<input type="checkbox" name="hobby" value="游戏"checked = "checked">   
+                     打篮球<input type="checkbox" name="hobby" value="游戏"> <br />
+                 <!-- 多选按钮 checkbox
+                    单（多）都可以设置checked属性 ，当页面打开时候就可以默认选择这个按钮 -->
+
+                电话号码： <input type="text" name="tel" oninput="value=value.replace(/[^\d]/g,'')" maxlength="11"><br />
+                 <!-- 网上代码：只能单纯输入数字 -->
+                    <input type="button" value="获取短信验证码"><br />
+
+                    上传头像：<input type="file"> <br />
+                    <!-- file 上传文件 -->
+
+                <input type="submit" value="免费注册">   <input type="reset" value="重新设置"> <br />
+                <!-- 提交按钮 提交到后台 submit
+                      重置按钮  resrt-->
+
+             </form>
+    <h4> select下拉标签 </h4>
+      <h4> 地方 </h4>
+    <form>
+      <select name="guangzhou">
+          <!-- 下拉语句 就这些-->
+          <option selected ="selected">广州</option>
+          <!-- selected = selected 默认选择 -->
+          <option selected ="selected">北京</option>
+          <!-- selected = selected 默认选择 -->
+          <option>上海</option>
+          <option>南京</option>
+          <option>天津</option>
+          <option>深圳</option>
+      </select>
+    </form>
+
+    <h4>textarea文本域元素<h4>
+        <!-- 小作文  多行写举报 -->
+        <form>
+            举报理由：
+         <textarea cols="50" rows="5" name="jibaoren">
+             <!-- cols多少个字   rows多少行 -->
+             我是你爹
+
+         </textarea>
+
+        </form>
+
+
+
+
+      
+      
+</body>
+</html>

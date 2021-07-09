@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css</title>
+    <style>
+        /* 一般写在head中 */
+        /* 选择{样式} */
+        /* 给谁改样式{改什么样式} */
+        p {
+            color: red;
+            /* 修改了颜色 */
+            font-size: 12px;
+             /* 修改为12像素 */
+        }
+        /*  标签选择器  只能选择全部 不能单独*/
+        div {
+            color: thistle;
+        }
+         /*  标签选择器  只能选择全部 不能单独*/
+
+
+
+         .red {
+             color: red;
+         }
+           /* 类标签 claas  谁用谁调用  不能用标签名 命名*/
+         .yellow {
+             color: yellow;
+         }
+         /* 类标签 claas  谁用谁调用 */
+         .feel {
+             color: green;
+         }
+         /* 多类名选择   可以设置class */
+         .fool{
+             font-size: 120px;
+         }
+          /* 多类名选择   可以设置class */
+
+
+
+          #apex {
+               color: blue;
+          }
+          /* id选择器 样式用#定义 结构id调用 只能调用一次 ，其他人没的用 */
+
+
+
+
+         
+
+
+
+    </style>
+
+    
+</head>
+
+<body>
+    <p > css样式结构 </p>
+    <p class="yellow"> css样式结构 </p>
+    <p> css样式结构 </p>
+    <div>nb</div>
+    <div>nb</div>
+    <div>nb</div>
+
+
+
+    <ul>
+        <li class="red" > 1</li>
+        <li class="yellow"> 2</li>
+        <li> 3</li>
+        <li> 4</li>
+    </ul>
+
+    <div class="feel fool"> 不该 </div>
+    <!-- 多类名选择   可以用其他不同的class -->
+
+
+    id选择器
+    <div id="apex">apex</div>
+    <!-- <div id="apex">apex</div> -->
+    <!-- 上面这个就无法调用了 -->
+    
+</body>
+</html>
